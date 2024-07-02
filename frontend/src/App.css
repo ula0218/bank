@@ -1,0 +1,38 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bank-selector {
+  margin-bottom: 20px;
+}
+
+#bankCode {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  max-height: 200px; /* 控制下拉選單最大高度 */
+  overflow-y: auto; /* 超出高度時顯示滾動條 */
+}
+
+.branch-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
