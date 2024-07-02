@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # 暴露端口，用於本地測試
-EXPOSE 80:3001
+EXPOSE 3456
 
 # 定義啟動命令
 CMD ["npm", "start"]

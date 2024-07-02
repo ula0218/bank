@@ -12,7 +12,7 @@ RUN go mod download
 RUN go build -o main .
 
 # 暴露端口，用於本地測試
-EXPOSE 80
+EXPOSE 8080
 
 # 定義啟動命令
 CMD ["./main"]
