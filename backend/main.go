@@ -83,7 +83,7 @@ func main() {
 	})
 
 	// 啟動 Gin 服務
-	r.Run(":80")
+	r.Run(":8080")
 }
 
 // readBankData 從 CSV 檔案中讀取銀行資料並返回一個 map 切片

@@ -8,7 +8,7 @@ function BankSelector({ onBankCodeChange }) {
     const [selectedBankCode, setSelectedBankCode] = useState('');
 
     useEffect(() => {
-        axios.get('http://localhost:80/')
+        axios.get('http://localhost:8080/')
             .then(response => {
                 const sortedBankCodes = response.data.sort((a, b) => a.code.localeCompare(b.code));
                 setBankCodes(sortedBankCodes);
@@ -44,7 +44,7 @@ function BranchList() {
 
     useEffect(() => {
         if (bankCode) {
-            axios.get(`http://localhost:80/${bankCode}/branches`)
+            axios.get(`http://localhost:8080/${bankCode}/branches`)
                 .then(response => {
                     setBranches(response.data);
                 })
