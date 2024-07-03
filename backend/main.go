@@ -16,8 +16,8 @@ func main() {
 
 	// 設置CORS中間件
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:3456","http://52.194.190.91",} // 允許的前端地址，根據實際情況修改
-	config.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Authorization"}
+	config.AllowOrigins = []string{"http://localhost:3456","http://52.194.190.91",} // 允許的前端地址，根據實際情況修改（開發環境、生產環境）
+	config.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Authorization"}//設置允許的請求標頭，這些標頭是允許跨來源資源共享（CORS）的一部分。
 	r.Use(cors.New(config))
 
 	// 設置路由處理函數
