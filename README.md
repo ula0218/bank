@@ -1,10 +1,13 @@
 # Bank
 
 ## Skills
-* 後端：GoLang,Gin
-* 前端：React
-
-## Host
+* Backend: GoLang, Gin
+* Frontend: React
+* Deployment: EC2
+* Version Control: Git
+* Containerization: Docker
+  
+## Host（已停止EC2 instance )
 ```
 http://52.194.190.91/
 ```
