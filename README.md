@@ -1,8 +1,8 @@
 # Bank
 
 ## Skills
-*後端：GoLang,Gin
-*前端：React
+* 後端：GoLang,Gin
+* 前端：React
 
 ## host
 ```
