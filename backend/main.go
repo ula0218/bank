@@ -51,7 +51,7 @@ func main() {
 		c.JSON(http.StatusOK, banks)
 	})
 
-	// 設置處理 /bank/:bank_code/branches 的路由
+	// 設置處理 /:bank_code/branches 的路由
 	r.GET("/:bank_code/branches", func(c *gin.Context) {
 		bankCode := c.Param("bank_code")
 
