@@ -4,7 +4,7 @@
 * 後端：GoLang,Gin
 * 前端：React
 
-## host
+## Host
 ```
 http://52.194.190.91/
 ```
