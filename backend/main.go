@@ -16,7 +16,7 @@ func main() {
 
 	// 設置CORS中間件
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"http://localhost:3456"} // 允許的前端地址，根據實際情況修改
+	config.AllowOrigins = []string{"http://localhost:3456","http://52.194.190.91",} // 允許的前端地址，根據實際情況修改
 	config.AllowHeaders = []string{"Origin", "Content-Length", "Content-Type", "Authorization"}
 	r.Use(cors.New(config))
 
