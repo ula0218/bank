@@ -55,9 +55,9 @@ server {
 ```
 ### 2.vim編輯frontend/src/App.js
 
-修改axios.get('http://localhost:8080/')
+修改axios.get(`http://localhost:8080/`)
 ```
-axios.get('http://52.194.190.91:8080/')
+axios.get(`http://52.194.190.91:8080/`)
 ```
 修改axios.get(`http://localhost:8080/${bankCode}/branches`)
 ```
