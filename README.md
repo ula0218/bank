@@ -1,17 +1,17 @@
 # Bank
 
 ## Skills
-*後端：GoLang,Gin
-*前端：React
+* 後端：GoLang,Gin
+* 前端：React
 
-## host
+## Host
 ```
 http://52.194.190.91/
 ```
 ## Setup Instructions
 
-### 1. csv檔案
-自行去政府資料公開平台下載最新金融機構基本資料查詢
+### csv檔案
+政府資料公開平台下載最新『金融機構基本資料查詢』
 ```
 https://data.gov.tw/dataset/6041
 ```
@@ -54,10 +54,11 @@ server {
 }
 ```
 ### 2.vim編輯frontend/src/App.js
+* 在 instance 的終端執行：
 
-修改axios.get('http://localhost:8080/')
+修改axios.get(`http://localhost:8080/`)
 ```
-axios.get('http://52.194.190.91:8080/')
+axios.get(`http://52.194.190.91:8080/`)
 ```
 修改axios.get(`http://localhost:8080/${bankCode}/branches`)
 ```
